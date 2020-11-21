@@ -54,7 +54,7 @@ div.output code,
 .rendered_html p code,
 div.completions select,
 div.container pre {
-    font-size: 12px;
+    font-size: 11pt;
 }
 
 div.prompt,
@@ -507,8 +507,17 @@ div#notebook .text_cell_render {
     line-height: 1.25;
 }
 
-.rendered_html li p {
-    margin-top: 1em;
+.rendered_html * + p {
+    margin-top: 0.6em;
+    padding-left: 1em;
+}
+
+.rendered_html h1:first-child,
+.rendered_html h2:first-child,
+.rendered_html h3:first-child,
+.rendered_html h4:first-child,
+.rendered_html h5:first-child{
+margin-top: 0.0em;
 }
 
 .rendered_html h1 {
@@ -613,11 +622,14 @@ div.output_html {
     .notebook_app .rendered_html pre,
     .notebook_app .rendered_html code {
         border: 0;
-        font-size: 14px;
+        font-size: 11pt;
         background-color: rgb(0, 0, 0);
         color: #f3f3f3;
-        padding: 0;
-        margin: 0em 0em;
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        text-indent: -0.7em;
+        margin: 0.1em 0.1em 0.1em 0.1em;
+        line-height: 1.5em;
+    }
     }
 }
 
@@ -662,6 +674,7 @@ span.ansiyellow {
 .CodeMirror {
     background: #141414;
     color: #F8F8F8;
+    font-size: 11pt;
 }
 
 div.CodeMirror-selected {
@@ -699,7 +712,7 @@ div.CodeMirror-selected {
 }
 
 .CodeMirror span.cm-property {
-    color: #59cbd8;
+    color: #fdaa84;
 }
 
 .CodeMirror span.cm-attribute {

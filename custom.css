@@ -523,6 +523,11 @@ div#notebook .text_cell_render {
 margin-top: 0.0em;
 }
 
+.rendered_html p {
+    text-align: left;
+    padding: 0em 0em 0em 1em;
+}
+
 .rendered_html h1 {
     color: #CF4A4C;
 }

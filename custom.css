@@ -197,6 +197,9 @@ body[data-notebook-path] #header,
    #toc-wrapper.ui-draggable.ui-resizable.sidebar-wrapper {
     border-color: rgba(80,92,133,.22) !important;
    }
+   #toc-wrapper .ui-icon-grip-dotted-vertical {
+    background-color: rgb(131, 12, 12) !important;
+   }
    #toc a,
    #navigate_menu a,
    .toc {
@@ -298,12 +301,12 @@ body>#header .header-bar {
     background: #444;
 }
 
-#header .navbar-brand {
+/* #header .navbar-brand {
     display: none;
-}
+} */
 
 #header .filename {
-    margin-left: 0;
+    margin-left: 1em;
     margin-right: 2em;
 }
 

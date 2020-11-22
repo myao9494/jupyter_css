@@ -12,12 +12,11 @@
   Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
   Visual Studio Code color theme
 */
-body,
-body.notebook_app.command_mode {
+
+body, body.notebook_app.command_mode {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #ff585b;
 }
-
 
 /* 
   SET THE CODE/MONOSPACE FONT 
@@ -27,10 +26,7 @@ body.notebook_app.command_mode {
   in which case, add your preferred font to the stack below.
 */
 
-.CodeMirror pre,
-.CodeMirror-dialog,
-.CodeMirror-dialog .CodeMirror-search-field,
-.terminal-app .terminal {
+.CodeMirror pre, .CodeMirror-dialog, .CodeMirror-dialog .CodeMirror-search-field, .terminal-app .terminal {
     font-family: "Bitstream Vera Sans Mono", Monaco, monospace;
     font-size: 9pt;
 }
@@ -39,26 +35,15 @@ body.notebook_app.command_mode {
     line-height: 1.3em;
 }
 
-div.output pre,
-div.output code,
-.rendered_html pre,
-.rendered_html code,
-div.completions select,
-div.container pre {
+div.output pre, div.output code, .rendered_html pre, .rendered_html code, div.completions select, div.container pre {
     font-family: "Bitstream Vera Sans Mono", Monaco, monospace;
 }
 
-div.output pre,
-div.output code,
-.rendered_html pre,
-.rendered_html p code,
-div.completions select,
-div.container pre {
+div.output pre, div.output code, .rendered_html pre, .rendered_html p code, div.completions select, div.container pre {
     font-size: 11pt;
 }
 
-div.prompt,
-div.tooltiptext pre {
+div.prompt, div.tooltiptext pre {
     font-family: "Bitstream Vera Sans Mono", Monaco, monospace;
     font-size: 8pt;
 }
@@ -68,7 +53,6 @@ div.input_area {
     background: rbga(0, 0, 0, 0.5);
     background: #691b1b;
 }
-
 
 /* GLOBALS */
 
@@ -82,11 +66,9 @@ a {
     color: #ff585b;
 }
 
-a:hover,
-a:focus {
+a:hover, a:focus {
     color: rgb(253, 91, 91);
 }
-
 
 /* INTRO PAGE */
 
@@ -94,8 +76,7 @@ body[data-notebook-path] {
     background-color: #222;
 }
 
-body[data-notebook-path] #header,
-.terminal-app #header {
+body[data-notebook-path] #header, .terminal-app #header {
     display: none !important;
 }
 
@@ -119,15 +100,12 @@ body[data-notebook-path] #header,
     border-bottom-color: #444;
 }
 
-.nav-tabs>li>a:hover,
-.nav>li>a:focus {
+.nav-tabs>li>a:hover, .nav>li>a:focus {
     background-color: #333;
     border-color: #222 #222 #555 #222;
 }
 
-.nav-tabs>li.active>a,
-.nav-tabs>li.active>a:focus,
-.nav-tabs>li.active>a:hover {
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     color: #979797;
     background-color: #444;
     border-top-color: #444;
@@ -193,38 +171,42 @@ body[data-notebook-path] #header,
     border-width: thin;
     border-right-width: medium !important;
     background-color: #1d1e23 !important;
-   }
-   #toc-wrapper.ui-draggable.ui-resizable.sidebar-wrapper {
-    border-color: rgba(80,92,133,.22) !important;
-   }
-   #toc-wrapper .ui-icon-grip-dotted-vertical {
+}
+
+#toc-wrapper.ui-draggable.ui-resizable.sidebar-wrapper {
+    border-color: rgba(80, 92, 133, .22) !important;
+}
+
+#toc-wrapper .ui-icon-grip-dotted-vertical {
     background-color: rgb(131, 12, 12) !important;
-   }
-   #toc a,
-   #navigate_menu a,
-   .toc {
+}
+
+#toc a, #navigate_menu a, .toc {
     color: #ffffff !important;
     font-size: 9.5pt !important;
-   }
-   #toc li > span:hover {
+}
+
+#toc li>span:hover {
     background-color: #313643 !important;
-   }
-   #toc a:hover,
-   #navigate_menu a:hover,
-   .toc {
+}
+
+#toc a:hover, #navigate_menu a:hover, .toc {
     color: #d8dcee !important;
     font-size: 9.5pt !important;
-   }
-   #toc-wrapper .toc-item-num {
+}
+
+#toc-wrapper .toc-item-num {
     color: #7aa05d !important;
     font-size: 9.5pt !important;
-   }
-   #toc-wrapper .toc-item li {
+}
+
+#toc-wrapper .toc-item li {
     color: #f7f7f7 !important;
-   }
-   #toc-wrapper .toc-item-highlight-select {
+}
+
+#toc-wrapper .toc-item-highlight-select {
     background-color: #00ea847a;
-    }
+}
 
 /* Dropdown menus */
 
@@ -233,9 +215,7 @@ body[data-notebook-path] #header,
     color: #b7b7b7;
 }
 
-.dropdown-menu>li>a,
-.dropdown-submenu>a:after,
-.dropdown-menu>li>a:visited:after {
+.dropdown-menu>li>a, .dropdown-submenu>a:after, .dropdown-menu>li>a:visited:after {
     color: #b7b7b7;
 }
 
@@ -243,18 +223,14 @@ body[data-notebook-path] #header,
     background-color: #444;
 }
 
-.dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus {
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
     color: #fff;
     background-color: #444;
 }
 
-.dropdown-menu>li>a:hover:after,
-.dropdown-menu>li>a:focus:after,
-.dropdown-menu>li>a:active:after {
+.dropdown-menu>li>a:hover:after, .dropdown-menu>li>a:focus:after, .dropdown-menu>li>a:active:after {
     color: #fff;
 }
-
 
 /* TERMINAL INTERFACE */
 
@@ -266,16 +242,13 @@ body[data-notebook-path] #header,
     background: #141414 !important;
 }
 
-
 /* NOTEBOOK AND EDITOR INTERFACE */
-
 
 /* comment out the following line to unhide the toolbar */
 
 div#maintoolbar {
     display: none !important;
 }
-
 
 /*
   Header UI styles
@@ -285,8 +258,7 @@ body.notebook_app>#header {
     display: block !important;
 }
 
-.notebook_app>#header,
-.edit_app>#header {
+.notebook_app>#header, .edit_app>#header {
     background-color: #333;
     color: #b7b7b7;
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
@@ -327,14 +299,11 @@ span.save_widget span.filename:hover {
     border-color: #444;
 }
 
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
     color: #fff;
 }
 
-.navbar-default .navbar-nav>.open>a,
-.navbar-default .navbar-nav>.open>a:hover,
-.navbar-default .navbar-nav>.open>a:focus {
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
     color: #fff;
     background-color: #444;
 }
@@ -343,12 +312,10 @@ span.save_widget span.filename:hover {
     .notebook_app #notebook {
         background: #111;
     }
-    .notebook_app #notebook-container,
-    .edit_app #texteditor-backdrop {
+    .notebook_app #notebook-container, .edit_app #texteditor-backdrop {
         background: #272727;
     }
 }
-
 
 /*
   Inverting the notebook editor UI
@@ -368,15 +335,12 @@ span.save_widget span.filename:hover {
     opacity: 0.5;
 }
 
-.modal-dialog .modal-content,
-.popover,
-.popover .popover-title {
+.modal-dialog .modal-content, .popover, .popover .popover-title {
     background: rgba(50, 50, 50, 0.95);
     color: #b7b7b7;
 }
 
-.modal-header,
-.popover-title {
+.modal-header, .popover-title {
     border-bottom-color: #444;
 }
 
@@ -398,8 +362,7 @@ span.save_widget span.filename:hover {
     border-bottom-color: #444;
 }
 
-.btn:focus,
-.btn:active:focus {
+.btn:focus, .btn:active:focus {
     outline: 5px auto rgba(102, 175, 233, 0.3);
     outline-offset: -1px;
 }
@@ -411,36 +374,27 @@ span.save_widget span.filename:hover {
     color: #d2d2d2;
 }
 
-.btn-default:focus,
-.btn-default:hover {
+.btn-default:focus, .btn-default:hover {
     background-color: #555;
     border-color: #222;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
     color: #bbb;
 }
 
-.btn-default:active,
-.btn-default.active,
-.open>.dropdown-toggle.btn-default {
+.btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
     background-color: #474747;
     color: #999;
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-.btn-default.disabled:focus,
-.btn-default.disabled:hover,
-.btn-default[disabled]:focus,
-.btn-default[disabled]:hover {
+.btn-default.disabled:focus, .btn-default.disabled:hover, .btn-default[disabled]:focus, .btn-default[disabled]:hover {
     background-color: #555;
     border-color: #222;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
     color: #aaa;
 }
 
-.btn-default:active:hover,
-.btn-default:active:focus,
-.open>.dropdown-toggle.btn-default:hover,
-.open>.dropdown-toggle.btn-default:focus {
+.btn-default:active:hover, .btn-default:active:focus, .open>.dropdown-toggle.btn-default:hover, .open>.dropdown-toggle.btn-default:focus {
     background-color: #474747;
     color: #999;
     border-color: #222;
@@ -454,8 +408,7 @@ span.save_widget span.filename:hover {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
-.btn-primary:focus,
-.btn-primary:hover {
+.btn-primary:focus, .btn-primary:hover {
     background-color: #4481b7;
     color: #fff;
 }
@@ -465,8 +418,7 @@ span.save_widget span.filename:hover {
     color: #ccc;
 }
 
-.btn-primary:active:hover,
-.btn-primary:active:focus {
+.btn-primary:active:hover, .btn-primary:active:focus {
     background-color: #306ea6;
     color: #ccc;
 }
@@ -499,7 +451,6 @@ span.save_widget span.filename:hover {
     color: #b7b7b7;
 }
 
-
 /*
   Set fonts and styles for outputted content
 */
@@ -510,17 +461,13 @@ div#notebook .text_cell_render {
     line-height: 1.25;
 }
 
-.rendered_html * + p {
+.rendered_html *+p {
     margin-top: 0.6em;
     padding-left: 1em;
 }
 
-.rendered_html h1:first-child,
-.rendered_html h2:first-child,
-.rendered_html h3:first-child,
-.rendered_html h4:first-child,
-.rendered_html h5:first-child{
-margin-top: 0.0em;
+.rendered_html h1:first-child, .rendered_html h2:first-child, .rendered_html h3:first-child, .rendered_html h4:first-child, .rendered_html h5:first-child {
+    margin-top: 0.0em;
 }
 
 .rendered_html p {
@@ -533,25 +480,24 @@ margin-top: 0.0em;
 }
 
 .rendered_html h2 {
-  color: #CF4A4C;
+    color: #CF4A4C;
 }
 
 .rendered_html h3 {
-  color: #CF4A4C;
+    color: #CF4A4C;
 }
 
 .rendered_html h4 {
-  color: #CF4A4C;
+    color: #CF4A4C;
 }
 
 .rendered_html h5 {
-  color: #CF4A4C;
+    color: #CF4A4C;
 }
 
 div.output_html {
     font-family: sans-serif;
 }
-
 
 /*
   Set colors and styles that we only want on the screen, not for print
@@ -602,9 +548,7 @@ div.output_html {
     .notebook_app div.output_stderr pre {
         color: #eee;
     }
-    .notebook_app .rendered_html table,
-    .notebook_app .rendered_html tr,
-    .notebook_app .rendered_html td {
+    .notebook_app .rendered_html table, .notebook_app .rendered_html tr, .notebook_app .rendered_html td {
         border: 1px #ffffff solid;
         color: #ffffff;
         background-color: rgb(70, 70, 70);
@@ -620,15 +564,13 @@ div.output_html {
         color: #ffffff;
         background-color: rgb(33, 33, 33);
     }
-    .notebook_app div.text_cell_render,
-    .notebook_app div.output_html {
+    .notebook_app div.text_cell_render, .notebook_app div.output_html {
         color: #e4e4e4
     }
     .notebook_app table.dataframe tr {
         border: 1px #979797;
     }
-    .notebook_app .rendered_html pre,
-    .notebook_app .rendered_html code {
+    .notebook_app .rendered_html pre, .notebook_app .rendered_html code {
         border: 0;
         font-size: 11pt;
         background-color: rgb(0, 0, 0);
@@ -638,9 +580,7 @@ div.output_html {
         margin: 0.1em 0.1em 0.1em 0.1em;
         line-height: 1.5em;
     }
-    }
 }
-
 
 /*
   Terminal text coloring
@@ -674,7 +614,6 @@ span.ansiyellow {
     color: #f9ee98;
 }
 
-
 /*
   Code editing
 */
@@ -689,8 +628,7 @@ div.CodeMirror-selected {
     background: rgba(221, 240, 255, 0.19) !important;
 }
 
-#texteditor-backdrop #texteditor-container .CodeMirror-gutter,
-.CodeMirror-gutters {
+#texteditor-backdrop #texteditor-container .CodeMirror-gutter, .CodeMirror-gutters {
     background: #444;
     border-right: 0px;
     color: #777;
@@ -740,7 +678,6 @@ div.CodeMirror-selected {
     color: #E9C062;
 }
 
-
 /* regexp */
 
 .CodeMirror span.cm-operator {
@@ -789,7 +726,6 @@ div.CodeMirror-selected {
     color: #303030 !important;
 }
 
-
 /*
   Markdown editing
 */
@@ -812,5 +748,4 @@ div.CodeMirror-selected {
 
 .cm-s-ipython span.cm-variable {
     color: #ffffff;
-   }
-
+}

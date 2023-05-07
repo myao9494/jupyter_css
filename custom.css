@@ -256,6 +256,14 @@ div#maintoolbar {
     display: none !important;
 }
 
+div#menubar-container {
+    padding-left: 0px !important;
+}
+
+.nav > li > a {
+        padding: 7px 7px !important;
+}
+
 /*
   Header UI styles
 */

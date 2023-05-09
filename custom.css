@@ -264,6 +264,17 @@ div#menubar-container {
         padding: 7px 7px !important;
 }
 
+/* hide save, insert, cut, copy, paste, move, run, cell type, and command palette buttons */
+#save-notbook,
+#insert_above_below,
+#cut_copy_paste,
+#move_up_down,
+#run_int,
+#cell_type,
+#cmd_palette {
+  display: none;
+}
+
 /*
   Header UI styles
 */

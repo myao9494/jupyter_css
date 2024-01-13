@@ -13,6 +13,10 @@
   Visual Studio Code color theme
 */
 
+.container { width: 80% !important; }
+.cell { width: 100% !important; }
+
+
 body, body.notebook_app.command_mode {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #ff585b;
@@ -275,6 +279,12 @@ div#menubar-container {
   display: none;
 }
 
+/* #filelink {
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+    padding: 7px 7px !important;
+} */
+
 /*
   Header UI styles
 */
@@ -505,20 +515,25 @@ div#notebook .text_cell_render {
     color: #CF4A4C;
 }
 
-.rendered_html h2 {
-    color: #CF4A4C;
+.rendered_html h2, .rendered_html h2 a {
+    color: #fffb00; /* h2見出しとその内部のリンクの文字色を指定 */
+    margin-left: 8px;
 }
 
-.rendered_html h3 {
-    color: #CF4A4C;
+
+.rendered_html h3, .rendered_html h3 a {
+    color: #cf9c4a;
+    margin-left: 16px;
 }
 
-.rendered_html h4 {
-    color: #CF4A4C;
+.rendered_html h4, .rendered_html h4 a {
+    color: #cfbd4a;
+    margin-left: 24px;
 }
 
-.rendered_html h5 {
-    color: #CF4A4C;
+.rendered_html h5, .rendered_html h5 a {
+    color: #60cf4a;
+    margin-left: 32px;
 }
 
 div.output_html {
